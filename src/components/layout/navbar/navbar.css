@@ -1,0 +1,161 @@
+.navbar {
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+
+  border-top: 6px solid #f36f21; /* linea superior naranja */
+  border-bottom: 1px solid #eee;
+}
+
+
+.navbar-link {
+  text-decoration: none;
+  color: #0b2c3d;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 6px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #f36f21;
+}
+
+/* linea inferior animada */
+.navbar-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 0%;
+  height: 2px;
+
+  background: #f36f21;
+  transition: width 0.3s ease;
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+/* linea activa */
+.navbar-link.active {
+  color: #f36f21;
+}
+
+.navbar-link.active::after {
+  width: 100%;
+}
+
+
+.navbar {
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar-item {
+  position: relative;
+  padding: 0 14px;
+}
+
+
+.navbar-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 1px;
+  height: 14px;
+
+  background: #ccc;
+}
+
+.navbar-container {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.navbar-logo img {
+  height: 40px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #0b2c3d;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #f36f21; /* naranja marca */
+}
+
+/* boton hamburguesa oculto en desktop */
+.navbar-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* comportamiento en pantallas pequeñas */
+@media (max-width: 768px) {
+
+  .navbar-container {
+    padding: 15px 20px;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+
+    flex-direction: column;
+    align-items: center;
+
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 0.35s ease;
+    border-bottom: 1px solid #eee;
+  }
+
+  .navbar-menu.active {
+    max-height: 400px;
+  }
+
+  .navbar-item {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+  }
+}
+
