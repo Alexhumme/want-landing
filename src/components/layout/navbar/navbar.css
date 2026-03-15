@@ -6,6 +6,10 @@
 
   border-top: 6px solid #f36f21; /* linea superior naranja */
   border-bottom: 1px solid #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 
@@ -51,14 +55,6 @@
 }
 
 
-.navbar {
-  width: 100%;
-  background: white;
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid #eee;
-}
-
 .navbar-item {
   position: relative;
   padding: 0 14px;
@@ -80,11 +76,11 @@
 }
 
 .navbar-container {
-  width: 1200px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
+  padding: 16px clamp(20px, 6vw, 96px);
 }
 
 .navbar-logo img {
@@ -124,7 +120,7 @@
 @media (max-width: 768px) {
 
   .navbar-container {
-    padding: 15px 20px;
+    padding: 14px 20px;
   }
 
   .navbar-toggle {
@@ -133,7 +129,7 @@
 
   .navbar-menu {
     position: absolute;
-    top: 70px;
+    top: 68px;
     left: 0;
     width: 100%;
     background: white;

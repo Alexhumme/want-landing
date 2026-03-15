@@ -1,23 +1,96 @@
 .hero {
   width: 100%;
-  background: #f6f7f8;
-  padding: 00px 20px;
+  position: relative;
+  background: linear-gradient(135deg, #f7f9fb 0%, #ffffff 55%, #f3f5f7 100%);
+  padding: clamp(64px, 10vw, 120px) clamp(20px, 6vw, 96px);
+  overflow: hidden;
+}
+
+.hero-flow-bg {
+  position: absolute;
+  inset: auto 0 0 0;
+  width: 100%;
+  height: 55%;
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-flow-path {
+  fill: none;
+  stroke-width: 16;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 380 900;
+  animation: heroFlow 16s linear infinite;
+}
+
+.hero-flow-path.path-one {
+  stroke: rgba(243, 111, 33, 0.6);
+}
+
+.hero-flow-path.path-two {
+  stroke: rgba(11, 44, 61, 0.45);
+  animation-duration: 20s;
+}
+
+.hero-flow-path.path-three {
+  stroke: rgba(140, 145, 156, 0.35);
+  animation-duration: 24s;
+}
+
+@keyframes heroFlow {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -1200;
+  }
+}
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(40px);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.hero::before {
+  width: 340px;
+  height: 340px;
+  background: rgba(243, 111, 33, 0.35);
+  top: -80px;
+  right: -140px;
+}
+
+.hero::after {
+  width: 420px;
+  height: 420px;
+  background: rgba(11, 44, 61, 0.2);
+  bottom: -160px;
+  left: -140px;
 }
 
 .hero-container {
-  max-width: 1200px;
-  margin: auto;
+  width: 100%;
 
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: minmax(280px, 1.1fr) minmax(260px, 1fr);
   align-items: center;
-  gap: 40px;
+  gap: clamp(24px, 6vw, 48px);
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: clamp(20px, 3vw, 30px);
+  border-radius: 20px;
 }
 
 .hero-title {
@@ -42,30 +115,14 @@
 .hero-tags {
   color: #f36f21;
   font-size: 15px;
+  letter-spacing: 0.2px;
 }
 
 .hero-buttons {
   margin-top: 12px;
   display: flex;
   gap: 16px;
-  justify-content: center;
-}
-
-.btn-primary {
-  background: #f36f21;
-  color: white;
-  border: none;
-  padding: 12px 22px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.btn-secondary {
-  background: #e9ecef;
-  border: none;
-  padding: 12px 22px;
-  border-radius: 6px;
-  cursor: pointer;
+  justify-content: flex-start;
 }
 
 .hero-image img {
@@ -115,12 +172,6 @@
     align-items: stretch;
     gap: 12px;
   }
-
-  .btn-primary,
-  .btn-secondary {
-    width: 100%;
-  }
-
 }
 
 /* SMALL MOBILE */

@@ -1,0 +1,95 @@
+import "./solutions-section.css";
+import heroPerson from "../../../assets/hero-person.png";
+import phoneFrame from "../../../assets/phone-frame.svg";
+import iconCredit from "../../../assets/icon-credit-card.svg";
+import iconSync from "../../../assets/icon-sync.svg";
+import iconPos from "../../../assets/icon-pos.svg";
+import iconLink from "../../../assets/icon-link.svg";
+
+function SolutionsSection() {
+  return (
+    <section className="section solutions-section" id="soluciones">
+      <div className="solutions-inner">
+        <div className="solutions-header" data-aos="fade-up">
+          <h2 className="solutions-title">
+            Nuestras <span>Soluciones</span>
+          </h2>
+          <p className="solutions-subtitle">
+            Cada producto puede implementarse de forma independiente o como parte
+            de una solucion integrada segun sus necesidades.
+          </p>
+        </div>
+
+        <div className="solutions-body">
+          <div className="solutions-col left" data-aos="fade-right">
+            <article className="solution-card" data-aos="fade-up" data-aos-delay="50">
+              <div className="solution-icon">
+                <img src={iconCredit} alt="Credito digital" />
+              </div>
+              <p className="solution-desc">
+                Originacion multicanal + orquestacion de integraciones + motor de
+                decision para segmentacion, capacidad y pricing.
+              </p>
+              <h3 className="solution-title">Credito Digital</h3>
+              <p className="solution-subtitle">End-to-End</p>
+            </article>
+
+            <article className="solution-card" data-aos="fade-up" data-aos-delay="140">
+              <div className="solution-icon">
+                <img src={iconPos} alt="Cash management" />
+              </div>
+              <p className="solution-desc">
+                Conectividad bancaria, automatizacion de pagos, conciliacion y
+                visibilidad de caja en un esquema modular.
+              </p>
+              <h3 className="solution-title">Cash Management</h3>
+              <p className="solution-subtitle">Pagos & Tesoreria</p>
+            </article>
+          </div>
+
+          <div className="solutions-center" data-aos="zoom-in">
+            <div className="phone-wrap">
+              <img className="phone-frame-img" src={phoneFrame} alt="" />
+              <img
+                className="phone-screen"
+                src={heroPerson}
+                alt="Usuario usando movil"
+              />
+            </div>
+          </div>
+
+          <div className="solutions-col right" data-aos="fade-left">
+            <article className="solution-card" data-aos="fade-up" data-aos-delay="80">
+              <div className="solution-icon">
+                <img src={iconSync} alt="Transformador SWIFT ISO 20022" />
+              </div>
+              <p className="solution-desc">
+                Plataforma para procesar, traducir MT-MX, enriquecer y rutear
+                mensajeria financiera bajo estandar ISO 20022.
+              </p>
+              <h3 className="solution-title">Transformador</h3>
+              <p className="solution-subtitle">SWIFT/ISO 20022</p>
+            </article>
+
+            <article className="solution-card" data-aos="fade-up" data-aos-delay="170">
+              <div className="solution-icon">
+                <img src={iconLink} alt="Integracion y orquestacion" />
+              </div>
+              <p className="solution-desc">
+                API Management + eventos/colas + seguridad + observabilidad para
+                acelerar integraciones sin tocar el core.
+              </p>
+              <h3 className="solution-title">Integracion</h3>
+              <p className="solution-subtitle">& Orquestacion</p>
+            </article>
+          </div>
+        </div>
+
+        <div className="solutions-accent accent-left" aria-hidden="true" />
+        <div className="solutions-accent accent-right" aria-hidden="true" />
+      </div>
+    </section>
+  );
+}
+
+export default SolutionsSection;
