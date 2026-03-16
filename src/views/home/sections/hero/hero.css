@@ -74,6 +74,15 @@
   left: -140px;
 }
 
+.hero::before,
+.hero::after {
+  filter: blur(60px);
+}
+
+.hero::after {
+  opacity: 0.28;
+}
+
 .hero-container {
   width: 100%;
 

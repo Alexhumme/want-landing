@@ -4,6 +4,32 @@
   overflow: hidden;
 }
 
+.credit-suite::before,
+.credit-suite::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+.credit-suite::before {
+  width: 360px;
+  height: 360px;
+  background: rgba(243, 111, 33, 0.2);
+  top: -140px;
+  left: -180px;
+}
+
+.credit-suite::after {
+  width: 420px;
+  height: 420px;
+  background: rgba(11, 44, 61, 0.18);
+  bottom: -200px;
+  right: -170px;
+}
+
 .credit-inner {
   position: relative;
   display: grid;

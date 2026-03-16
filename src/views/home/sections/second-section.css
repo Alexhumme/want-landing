@@ -9,8 +9,8 @@
   content: "";
   position: absolute;
   border-radius: 50%;
-  filter: blur(50px);
-  opacity: 0.25;
+  filter: blur(70px);
+  opacity: 0.28;
   pointer-events: none;
 }
 
