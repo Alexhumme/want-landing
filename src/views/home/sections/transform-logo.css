@@ -1,0 +1,70 @@
+.transform-logo {
+  position: relative;
+  width: 111px;
+  height: 97px;
+  margin: 0 auto;
+}
+
+.transform-bar {
+  position: absolute;
+  width: 9.55159px;
+  height: 82.907px;
+  background: #ffa52c;
+}
+
+.transform-bar.top {
+  width: 82.9557px;
+  height: 9.54597px;
+  left: 28.0443px;
+  top: 0;
+}
+
+.transform-bar.right {
+  left: 101.359px;
+  top: 14.0931px;
+}
+
+.transform-bar.inner-right {
+  width: 9.55159px;
+  height: 68.0522px;
+  left: 87.3818px;
+  top: 28.9478px;
+}
+
+.transform-bar.left {
+  height: 82.907px;
+  left: 0.08935px;
+  top: 0;
+  background: #002e49;
+}
+
+.transform-bar.inner-left {
+  width: 9.55159px;
+  height: 68.0522px;
+  left: 14.06671px;
+  top: 0;
+  background: #002e49;
+}
+
+.transform-bar.bottom {
+  width: 82.9557px;
+  height: 9.54597px;
+  left: 0;
+  top: 87.45403px;
+  background: #002e49;
+}
+
+.transform-bar.inner-top {
+  width: 72.668px;
+  height: 9.54597px;
+  left: 28.691px;
+  top: 14.0931px;
+}
+
+.transform-bar.inner-bottom {
+  width: 72.668px;
+  height: 9.54597px;
+  left: 9.64094px;
+  top: 73.36103px;
+  background: #002e49;
+}

@@ -10,7 +10,7 @@ function SolutionsSection() {
   return (
     <section className="section solutions-section" id="soluciones">
       <div className="solutions-inner">
-        <div className="solutions-header" data-aos="fade-up">
+        <div className="solutions-header parallax-item" data-parallax="0.07" data-aos="fade-up">
           <h2 className="solutions-title">
             Nuestras <span>Soluciones</span>
           </h2>
@@ -21,7 +21,7 @@ function SolutionsSection() {
         </div>
 
         <div className="solutions-body">
-          <div className="solutions-col left" data-aos="fade-right">
+          <div className="solutions-col left parallax-item" data-parallax="0.08" data-aos="fade-right">
             <article className="solution-card" data-aos="fade-up" data-aos-delay="50">
               <div className="solution-icon">
                 <img src={iconCredit} alt="Credito digital" />
@@ -47,8 +47,9 @@ function SolutionsSection() {
             </article>
           </div>
 
-          <div className="solutions-center" data-aos="zoom-in">
+          <div className="solutions-center parallax-item" data-parallax="-0.1" data-aos="zoom-in">
             <div className="phone-wrap">
+              <span className="phone-glow" aria-hidden="true" />
               <img className="phone-frame-img" src={phoneFrame} alt="" />
               <img
                 className="phone-screen"
@@ -58,7 +59,7 @@ function SolutionsSection() {
             </div>
           </div>
 
-          <div className="solutions-col right" data-aos="fade-left">
+          <div className="solutions-col right parallax-item" data-parallax="0.08" data-aos="fade-left">
             <article className="solution-card" data-aos="fade-up" data-aos-delay="80">
               <div className="solution-icon">
                 <img src={iconSync} alt="Transformador SWIFT ISO 20022" />

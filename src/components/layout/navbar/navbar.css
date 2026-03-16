@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
 
-  border-top: 6px solid #f36f21; /* linea superior naranja */
+  border-top: 6px solid var(--brand); /* linea superior naranja */
   border-bottom: 1px solid #eee;
   position: fixed;
   top: 0;
@@ -24,7 +24,7 @@
 }
 
 .navbar-link:hover {
-  color: #f36f21;
+  color: var(--brand);
 }
 
 /* linea inferior animada */
@@ -37,7 +37,7 @@
   width: 0%;
   height: 2px;
 
-  background: #f36f21;
+  background: var(--brand);
   transition: width 0.3s ease;
 }
 
@@ -47,7 +47,7 @@
 
 /* linea activa */
 .navbar-link.active {
-  color: #f36f21;
+  color: var(--brand);
 }
 
 .navbar-link.active::after {
@@ -104,7 +104,7 @@
 }
 
 .navbar-link:hover {
-  color: #f36f21; /* naranja marca */
+  color: var(--brand); /* naranja marca */
 }
 
 /* boton hamburguesa oculto en desktop */
@@ -154,4 +154,3 @@
     padding: 12px 0;
   }
 }
-

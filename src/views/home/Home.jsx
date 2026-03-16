@@ -18,6 +18,38 @@ function Home() {
     });
   }, []);
 
+  useEffect(() => {
+    const items = Array.from(document.querySelectorAll("[data-parallax]"));
+    if (!items.length) return;
+
+    let rafId = null;
+    const update = () => {
+      rafId = null;
+      const viewport = window.innerHeight;
+      items.forEach((item) => {
+        const speed = parseFloat(item.dataset.parallax || "0.08");
+        const rect = item.getBoundingClientRect();
+        const offset = (rect.top + rect.height / 2 - viewport / 2) * -speed;
+        item.style.setProperty("--parallax-y", `${offset.toFixed(2)}px`);
+      });
+    };
+
+    const onScroll = () => {
+      if (rafId) return;
+      rafId = window.requestAnimationFrame(update);
+    };
+
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+
+    return () => {
+      if (rafId) window.cancelAnimationFrame(rafId);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }, []);
+
   return (
     <>
       <Hero />

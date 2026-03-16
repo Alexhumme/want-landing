@@ -6,7 +6,7 @@ import meshGrid from "../../../assets/mesh-grid.svg";
 function CreditSuiteSection() {
   return (
     <section className="section credit-suite" id="suite-credito">
-      <div className="credit-inner">
+      <div className="credit-inner parallax-item" data-parallax="-0.06">
         <div className="credit-bg" aria-hidden="true">
           <img src={meshGrid} alt="" />
         </div>

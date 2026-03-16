@@ -1,0 +1,91 @@
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(255, 255, 255, 0.98), rgba(243, 245, 247, 0.98));
+  display: grid;
+  place-items: center;
+  z-index: 9999;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.loading-screen--exit {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading-shell {
+  display: grid;
+  gap: 22px;
+  justify-items: center;
+}
+
+.loading-logo {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transform: translate(-100px, -28px);
+}
+
+.loading-logo.is-reveal {
+  transform: translate(18px, -28px);
+}
+
+.loading-logo .loading-text {
+  order: -1;
+}
+
+.loading-isotype {
+  width: 111px;
+  height: 111px;
+  transform: translateY(50px) scale(0.7);
+  position: relative;
+}
+
+.loading-rect {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 0 0;
+  transition: left 0.3s linear, top 0.3s linear, width 0.3s linear,
+    height 0.3s linear, transform 0.3s linear, background-color 0.3s linear;
+}
+
+.loading-text {
+  width: 160px;
+  height: auto;
+  opacity: 0;
+  transform: translate(14px, 45px);
+  transition: opacity 0.4s ease 0.1s, transform 0.4s ease 0.1s;
+}
+
+.loading-logo.is-reveal .loading-text {
+  opacity: 1;
+  transform: translate(0, 45px);
+}
+
+.loading-bar {
+  width: min(360px, 70vw);
+  height: 8px;
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.08);
+}
+
+.loading-bar-fill {
+  position: absolute;
+  inset: 1px auto 1px 1px;
+  height: calc(100% - 2px);
+  border-radius: inherit;
+  background: linear-gradient(120deg, rgba(160, 165, 172, 0.95), rgba(120, 126, 136, 0.95));
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.18);
+  transition: width 0.4s ease;
+}
+
+@media (max-width: 600px) {
+  .loading-text {
+    width: 130px;
+  }
+}

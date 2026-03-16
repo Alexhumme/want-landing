@@ -10,7 +10,7 @@ function SecondSection() {
       <div className="focus-inner">
         <img className="focus-watermark" src={isotipo} alt="" aria-hidden="true" />
 
-        <div className="focus-header" data-aos="fade-up">
+        <div className="focus-header parallax-item" data-parallax="0.07" data-aos="fade-up">
           <h2 className="focus-title">
             Nuestro <span>Enfoque</span>
           </h2>
@@ -20,7 +20,7 @@ function SecondSection() {
           </p>
         </div>
 
-        <div className="focus-grid">
+        <div className="focus-grid parallax-item" data-parallax="-0.06">
           <article className="focus-item" data-aos="fade-up" data-aos-delay="50">
             <div className="focus-circle">
               <img src={bgWave} alt="Arquitecturas modernas" />
@@ -43,7 +43,7 @@ function SecondSection() {
           </article>
         </div>
 
-        <p className="focus-tagline" data-aos="fade-up" data-aos-delay="220">
+        <p className="focus-tagline parallax-item" data-parallax="0.05" data-aos="fade-up" data-aos-delay="220">
           No solo implementamos software; co-construimos soluciones
         </p>
 

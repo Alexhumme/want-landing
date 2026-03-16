@@ -21,7 +21,7 @@ function Hero() {
 
       <div className="hero-container">
 
-        <div className="hero-content glass-panel" data-aos="fade-right">
+        <div className="hero-content parallax-item" data-parallax="0.08" data-aos="fade-right">
 
           <h1 className="hero-title">
             <span className="hero-highlight">
@@ -42,8 +42,19 @@ function Hero() {
             Pagos & Cash Management
           </div>
 
+          <div className="hero-snack glass-panel">
+            <div>
+              <span className="hero-snack-label">Time-to-Value</span>
+              <strong className="hero-snack-value">8 - 12 semanas</strong>
+            </div>
+            <div>
+              <span className="hero-snack-label">Cobertura</span>
+              <strong className="hero-snack-value">+18 países</strong>
+            </div>
+          </div>
+
           <div className="hero-buttons">
-            <button className="btn-primary">
+            <button className="btn-primary hero-cta">
               Agendar llamada
             </button>
 
@@ -54,7 +65,7 @@ function Hero() {
 
         </div>
 
-        <div className="hero-image" data-aos="fade-left">
+        <div className="hero-image parallax-item" data-parallax="-0.1" data-aos="fade-left">
           <img src={heroImage} alt="cliente usando móvil" />
         </div>
 
