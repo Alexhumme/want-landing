@@ -1,8 +1,8 @@
 import "./second-section.css";
 import isotipo from "../../../assets/isotipo.png";
-import bgBlur from "../../../assets/bg-blur.jpg";
-import bgWave from "../../../assets/bg-wave.jpg";
-import heroPerson from "../../../assets/hero-person.png";
+import handshake from "../../../assets/handshake.png";
+import arquitecture from "../../../assets/arquitecture.jpg";
+import businessTech from "../../../assets/business-tech.jpg";
 
 function SecondSection() {
   return (
@@ -23,21 +23,21 @@ function SecondSection() {
         <div className="focus-grid parallax-item" data-parallax="-0.06">
           <article className="focus-item" data-aos="fade-up" data-aos-delay="50">
             <div className="focus-circle">
-              <img src={bgWave} alt="Arquitecturas modernas" />
+              <img src={arquitecture} alt="Arquitecturas modernas" />
             </div>
             <h3>Arquitecturas modernas y Escalables</h3>
           </article>
 
           <article className="focus-item" data-aos="fade-up" data-aos-delay="120">
             <div className="focus-circle">
-              <img src={bgBlur} alt="Co-construccion con negocio y tecnologia" />
+              <img src={businessTech} alt="Co-construccion con negocio y tecnologia" />
             </div>
             <h3>Co-construccion con negocio y tecnologia</h3>
           </article>
 
           <article className="focus-item" data-aos="fade-up" data-aos-delay="190">
             <div className="focus-circle">
-              <img src={heroPerson} alt="Acompanamiento post-implementacion" />
+              <img src={handshake} alt="Acompanamiento post-implementacion" />
             </div>
             <h3>Acompanamiento Post-Implementacion</h3>
           </article>

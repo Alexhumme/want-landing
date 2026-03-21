@@ -1,6 +1,5 @@
 import "./solutions-section.css";
-import heroPerson from "../../../assets/hero-person.png";
-import phoneFrame from "../../../assets/phone-frame.svg";
+import phoneFrame from "../../../assets/phone-frame-1.png";
 import iconCredit from "../../../assets/icon-credit-card.svg";
 import iconSync from "../../../assets/icon-sync.svg";
 import iconPos from "../../../assets/icon-pos.svg";
@@ -51,11 +50,7 @@ function SolutionsSection() {
             <div className="phone-wrap">
               <span className="phone-glow" aria-hidden="true" />
               <img className="phone-frame-img" src={phoneFrame} alt="" />
-              <img
-                className="phone-screen"
-                src={heroPerson}
-                alt="Usuario usando movil"
-              />
+
             </div>
           </div>
 

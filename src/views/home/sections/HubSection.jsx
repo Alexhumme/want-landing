@@ -11,7 +11,6 @@ function HubSection() {
     <section className="section hub-section" id="hub-want">
       <div className="hub-inner glass-panel parallax-item" data-parallax="0.05">
         <div className="hub-header" data-aos="fade-up">
-          <img className="hub-logo" src={isotipo} alt="WANT isotipo" />
           <p className="hub-kicker">TRANSFORMADOR</p>
           <h2 className="hub-title">SWIFT/ISO 20022</h2>
           <p className="hub-subtitle">Hub WANT</p>

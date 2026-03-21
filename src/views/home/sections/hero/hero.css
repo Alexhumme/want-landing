@@ -218,8 +218,8 @@
   }
 
   .hero-snack {
-    grid-template-columns: 1fr;
-    max-width: -webkit-fill-available;
+    max-width: none;
+    grid-template-columns: fit-content;
   }
 }
 

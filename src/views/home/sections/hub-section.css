@@ -31,6 +31,7 @@
   right: -160px;
 }
 
+
 .hub-inner {
   position: relative;
   width: min(1100px, 100%);
@@ -85,16 +86,7 @@
   text-align: center;
 }
 
-.hub-flow::before,
-.hub-flow::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  height: 12px;
-  width: calc(50% - 210px);
-  transform: translateY(-50%);
-  opacity: 0.95;
-}
+
 
 .hub-flow::before {
   left: 0;
@@ -347,15 +339,25 @@
   }
 
   .hub-flow {
-    grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  }
+
+  /* fila 1 */
+  .hub-flow > :nth-child(1) {
+    grid-column: 1 / 4;
+  }
+
+  /* fila 2 (automático: 2,3,4 ocupan 3 columnas) */
+
+  /* fila 3 */
+  .hub-flow > :nth-child(5) {
+    grid-column: 1 / 4;
   }
 
   .hub-flow::before,
   .hub-flow::after {
-    display: none;
-  }
-
-  .hub-connector {
     display: none;
   }
 
