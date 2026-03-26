@@ -8,6 +8,8 @@ import iconLink from "../../../assets/icon-link.svg";
 function SolutionsSection() {
   return (
     <section className="section solutions-section" id="soluciones">
+      <span className="solutions-shape shape-top-left" aria-hidden="true" />
+      <span className="solutions-shape shape-bottom-right" aria-hidden="true" />
       <div className="solutions-inner">
         <div className="solutions-header parallax-item" data-parallax="0.07" data-aos="fade-up">
           <h2 className="solutions-title">
@@ -32,18 +34,6 @@ function SolutionsSection() {
               <h3 className="solution-title">Credito Digital</h3>
               <p className="solution-subtitle">End-to-End</p>
             </article>
-
-            <article className="solution-card" data-aos="fade-up" data-aos-delay="140">
-              <div className="solution-icon">
-                <img src={iconPos} alt="Cash management" />
-              </div>
-              <p className="solution-desc">
-                Conectividad bancaria, automatizacion de pagos, conciliacion y
-                visibilidad de caja en un esquema modular.
-              </p>
-              <h3 className="solution-title">Cash Management</h3>
-              <p className="solution-subtitle">Pagos & Tesoreria</p>
-            </article>
           </div>
 
           <div className="solutions-center parallax-item" data-parallax="-0.1" data-aos="zoom-in">
@@ -57,27 +47,17 @@ function SolutionsSection() {
           <div className="solutions-col right parallax-item" data-parallax="0.08" data-aos="fade-left">
             <article className="solution-card" data-aos="fade-up" data-aos-delay="80">
               <div className="solution-icon">
-                <img src={iconSync} alt="Transformador SWIFT ISO 20022" />
+                <img src={iconSync} alt="Transformador Bre-B ISO 20022" />
               </div>
               <p className="solution-desc">
                 Plataforma para procesar, traducir MT-MX, enriquecer y rutear
                 mensajeria financiera bajo estandar ISO 20022.
               </p>
               <h3 className="solution-title">Transformador</h3>
-              <p className="solution-subtitle">SWIFT/ISO 20022</p>
+              <p className="solution-subtitle">Bre-B/ISO 20022</p>
             </article>
 
-            <article className="solution-card" data-aos="fade-up" data-aos-delay="170">
-              <div className="solution-icon">
-                <img src={iconLink} alt="Integracion y orquestacion" />
-              </div>
-              <p className="solution-desc">
-                API Management + eventos/colas + seguridad + observabilidad para
-                acelerar integraciones sin tocar el core.
-              </p>
-              <h3 className="solution-title">Integracion</h3>
-              <p className="solution-subtitle">& Orquestacion</p>
-            </article>
+           
           </div>
         </div>
 

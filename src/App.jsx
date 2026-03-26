@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
-import AppRouter from "./router/AppRouter";
+import Navbar from "./components/layout/navbar/Navbar";
+import Footer from "./components/layout/footer/Footer";
+import Home from "./views/home/Home";
 import LoadingScreen from "./components/LoadingScreen";
 import heroPerson from "./assets/hero-person.png";
 import heroImg from "./assets/hero.png";
@@ -90,7 +92,9 @@ function App() {
   return (
     <>
       <LoadingScreen progress={Math.min(progress, 100)} stage={stage} />
-      <AppRouter />
+      <Navbar />
+      <Home />
+      <Footer />
     </>
   );
 }

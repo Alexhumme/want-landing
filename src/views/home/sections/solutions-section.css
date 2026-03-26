@@ -4,6 +4,32 @@
   overflow: hidden;
 }
 
+.solutions-shape {
+  position: absolute;
+  width: clamp(220px, 26vw, 360px);
+  height: clamp(220px, 26vw, 360px);
+  border-radius: 36px;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 165, 44, 0.4), rgba(255, 165, 44, 0.18) 45%, transparent 70%);
+  border: 70px solid rgba(255, 255, 255, 1);
+  filter: blur(3px);
+  opacity: 0.1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.solutions-shape.shape-top-left {
+  top: -90px;
+  left: -90px;
+  transform: rotate(-10deg);
+}
+
+.solutions-shape.shape-bottom-right {
+  bottom: -100px;
+  right: -90px;
+  transform: rotate(14deg);
+  background: radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.32), rgba(255, 165, 44, 0.16) 45%, transparent 70%);
+}
+
 .solutions-section::before,
 .solutions-section::after {
   content: "";
@@ -33,6 +59,7 @@
 .solutions-inner {
   position: relative;
   width: 100%;
+  z-index: 1;
   padding: clamp(64px, 9vw, 120px) clamp(20px, 6vw, 96px)
     clamp(72px, 10vw, 140px);
   box-sizing: border-box;

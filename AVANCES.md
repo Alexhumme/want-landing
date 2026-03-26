@@ -15,7 +15,7 @@ Se agrego la seccion "Nuestro Enfoque" en la vista Home siguiendo el layout de r
 - Iconografia naranja y hover sutil en los badges.
 
 ## Seccion 4 (Home)
-- Nuevo bloque "Transformador SWIFT/ISO 20022" con copy centrado.
+- Nuevo bloque "Transformador Bre-B/ISO 20022" con copy centrado.
 - Separadores laterales con degradado, sombras y transparencia.
 - Isotipo destacado con sombra suave.
 

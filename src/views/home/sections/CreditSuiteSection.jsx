@@ -19,7 +19,7 @@ function CreditSuiteSection() {
             Plataforma especializada que procesa, traduce (MT-MX), enriquece y
             enruta mensajeria financiera entre sistemas internos y redes
             externas, cumpliendo con el estandar ISO 20022 y los requerimientos
-            de migracion CBPR+ de SWIFT.
+            de migracion CBPR+ de Bre-B.
           </p>
         </div>
       </div>

@@ -1,20 +1,17 @@
-import { NavLink } from "react-router-dom";
 import "./navbar.css";
 
-function NavbarItem({ label, href }) {
+function NavbarItem({ label, href, isActive, onClick }) {
   return (
     <li className="navbar-item">
-      <NavLink
-        to={href}
-        className={({ isActive }) =>
-          isActive ? "navbar-link active" : "navbar-link"
-        }
+      <a
+        href={href}
+        className={isActive ? "navbar-link active" : "navbar-link"}
+        onClick={onClick}
       >
         {label}
-      </NavLink>
+      </a>
     </li>
   );
 }
 
 export default NavbarItem;
-

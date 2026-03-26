@@ -1,9 +1,9 @@
 import "./hero.css";
-import heroImage from "../../../../assets/smiling-man.png";
+import heroImage from "../../../../assets/smiling-woman-hero.png";
 
 function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="inicio">
       <svg className="hero-flow-bg" viewBox="0 0 1200 420" aria-hidden="true">
         <path
           className="hero-flow-path path-one"
@@ -38,7 +38,7 @@ function Hero() {
 
           <div className="hero-tags">
             Crédito digital |
-            Mensajería SWIFT/ISO 20022 |
+            Mensajería Bre-B/ISO 20022 |
             Pagos & Cash Management
           </div>
 

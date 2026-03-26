@@ -237,6 +237,9 @@
     width: 90px;
     height: 12px;
   }
+    .transform-section {
+  padding: clamp(32px, 6vw, 70px) 32px;
+}
 }
 
 @media (max-width: 640px) {
@@ -244,4 +247,6 @@
     width: 70px;
     height: 10px;
   }
+
+
 }

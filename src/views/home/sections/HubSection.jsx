@@ -12,7 +12,7 @@ function HubSection() {
       <div className="hub-inner glass-panel parallax-item" data-parallax="0.05">
         <div className="hub-header" data-aos="fade-up">
           <p className="hub-kicker">TRANSFORMADOR</p>
-          <h2 className="hub-title">SWIFT/ISO 20022</h2>
+          <h2 className="hub-title">Bre-B/ISO 20022</h2>
           <p className="hub-subtitle">Hub WANT</p>
         </div>
 
@@ -43,9 +43,9 @@ function HubSection() {
 
           <div className="hub-card right">
             <div className="hub-icon globe">
-              <img src={iconGlobe} alt="SWIFT y externos" />
+              <img src={iconGlobe} alt="Bre-B y externos" />
             </div>
-            <h3>SWIFT & Externos</h3>
+            <h3>Bre-B & Externos</h3>
             <p>CBPR+, Bancos</p>
           </div>
         </div>
@@ -64,7 +64,7 @@ function HubSection() {
               <h4>99.99%</h4>
               <p>Disponibilidad</p>
               <ul>
-                <li>Validacion de mensajes MT y MX segun estandares SWIFT</li>
+                <li>Validacion de mensajes MT y MX segun estandares Bre-B</li>
                 <li>Enriquecimiento automatico de datos (BIC, LEI, referencias)</li>
               </ul>
             </div>

@@ -15,13 +15,13 @@ function TransformSection() {
       <div className="transform-inner parallax-item" data-parallax="0.06" data-aos="fade-up">
         <h2 className="transform-title">
           TRANSFORMADOR
-          <span>SWIFT/ISO 20022</span>
+          <span>Bre-B/ISO 20022</span>
         </h2>
         <p className="transform-copy">
           Plataforma especializada que procesa, traduce (MT - MX), enriquece y
           enruta mensajeria financiera entre sistemas internos y redes externas,
           cumpliendo con el estandar ISO 20022 y los requerimientos de migracion
-          CBPR+ de SWIFT.
+          CBPR+ de Bre-B.
         </p>
         <div className="transform-logo" aria-hidden="true">
           <span className="transform-bar top" />
