@@ -20,6 +20,7 @@ function Footer() {
             <a href="#inicio">Inicio</a>
             <a href="#soluciones">Soluciones</a>
             <a href="#transformador">Transformador</a>
+            <a href="#contacto">Contacto</a>
           </div>
 
           <div className="footer-links">

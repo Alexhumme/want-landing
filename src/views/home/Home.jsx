@@ -7,6 +7,7 @@ import SolutionsSection from "./sections/SolutionsSection";
 import TransformSection from "./sections/TransformSection";
 import HubSection from "./sections/HubSection";
 import CreditSuiteSection from "./sections/CreditSuiteSection";
+import ContactSection from "./sections/ContactSection";
 
 function Home() {
   useEffect(() => {
@@ -58,6 +59,7 @@ function Home() {
       <TransformSection />
       <HubSection />
       <CreditSuiteSection />
+      <ContactSection />
     </>
   );
 }

@@ -14,7 +14,8 @@ function Navbar() {
     { label: "Soluciones", href: "#soluciones", id: "soluciones" },
     { label: "Transformador", href: "#transformador", id: "transformador" },
     { label: "Hub", href: "#hub-want", id: "hub-want" },
-    { label: "Suite Crédito", href: "#suite-credito", id: "suite-credito" }
+    { label: "Suite Crédito", href: "#suite-credito", id: "suite-credito" },
+    { label: "Contacto", href: "#contacto", id: "contacto" }
   ];
 
   useEffect(() => {
