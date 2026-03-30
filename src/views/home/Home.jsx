@@ -6,8 +6,9 @@ import SecondSection from "./sections/SecondSection";
 import SolutionsSection from "./sections/SolutionsSection";
 import TransformSection from "./sections/TransformSection";
 import HubSection from "./sections/HubSection";
-import CreditSuiteSection from "./sections/CreditSuiteSection";
 import ContactSection from "./sections/ContactSection";
+import WhoSection from "./sections/WhoSection";
+import CreditExperienceSection from "./sections/credit/CreditExperienceSection";
 
 function Home() {
   useEffect(() => {
@@ -28,7 +29,7 @@ function Home() {
       rafId = null;
       const viewport = window.innerHeight;
       items.forEach((item) => {
-        const speed = parseFloat(item.dataset.parallax || "0.08");
+        const speed = parseFloat(item.dataset.parallax || "0.12");
         const rect = item.getBoundingClientRect();
         const offset = (rect.top + rect.height / 2 - viewport / 2) * -speed;
         item.style.setProperty("--parallax-y", `${offset.toFixed(2)}px`);
@@ -54,11 +55,12 @@ function Home() {
   return (
     <>
       <Hero />
+      <WhoSection />
       <SecondSection />
       <SolutionsSection />
       <TransformSection />
       <HubSection />
-      <CreditSuiteSection />
+      <CreditExperienceSection />
       <ContactSection />
     </>
   );

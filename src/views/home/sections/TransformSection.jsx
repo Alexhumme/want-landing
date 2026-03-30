@@ -12,7 +12,7 @@ function TransformSection() {
         <span className="rain-line line-e" />
         <span className="rain-line line-f" />
       </div>
-      <div className="transform-inner parallax-item" data-parallax="0.06" data-aos="fade-up">
+      <div className="transform-inner parallax-item" data-parallax="0.1" data-aos="fade-up">
         <h2 className="transform-title">
           TRANSFORMADOR
           <span>Bre-B/ISO 20022</span>

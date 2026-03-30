@@ -1,0 +1,248 @@
+.orchestration-panel {
+  position: relative;
+  overflow: hidden;
+}
+
+.orch-orbits {
+  position: absolute;
+  inset: -30% -10%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.orbit {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 175, 66, 0.25);
+  box-shadow: 0 0 0 1px rgba(11, 44, 61, 0.08) inset;
+  opacity: 0.6;
+}
+
+.orbit-1 {
+  width: 60%;
+  height: 60%;
+  top: 20%;
+  left: 20%;
+}
+
+.orbit-2 {
+  width: 75%;
+  height: 75%;
+  top: 12.5%;
+  left: 12.5%;
+  border-color: rgba(11, 44, 61, 0.16);
+}
+
+.orbit-3 {
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  border-color: rgba(255, 175, 66, 0.2);
+}
+
+.orbit-4 {
+  width: 105%;
+  height: 105%;
+  top: -2.5%;
+  left: -2.5%;
+  border-color: rgba(11, 44, 61, 0.12);
+}
+
+.orch-shell {
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: clamp(30px, 4vw, 50px) clamp(20px, 5vw, 70px);
+  border-radius: 28px;
+  z-index: 1;
+}
+
+.orch-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.orch-header h2 {
+  font-size: clamp(22px, 3vw, 30px);
+  color: #0b2c3d;
+}
+
+.orch-header span {
+  font-weight: 700;
+}
+
+.orch-header img {
+  width: 28px;
+  height: 28px;
+}
+
+.orch-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.orch-card {
+  background: #fff7f0;
+  border: 2px solid rgba(243, 111, 33, 0.75);
+  border-radius: 18px;
+  padding: 18px 16px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.orch-card-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: rgba(243, 111, 33, 0.12);
+  margin: 0 auto 10px;
+  display: grid;
+  place-items: center;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.orch-card-icon img {
+  width: 18px;
+  height: 18px;
+}
+
+.orch-card p {
+  margin: 0;
+  font-size: 12px;
+  color: #0b2c3d;
+}
+
+.orch-card span {
+  display: block;
+  color: #52606d;
+}
+
+.orch-highlight {
+  background: #fff7f0;
+  border: 2px solid rgba(243, 111, 33, 0.85);
+  border-radius: 18px;
+  padding: 18px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.orch-highlight-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.orch-highlight-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.orch-highlight-title img {
+  width: 30px;
+  height: 30px;
+}
+
+.orch-highlight-title span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: #f36f21;
+  margin-bottom: 4px;
+}
+
+.orch-highlight-title h3 {
+  margin: 0;
+  color: #0b2c3d;
+  font-size: 18px;
+}
+
+.orch-pill {
+  background: #f36f21;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.orch-highlight p {
+  margin: 0 0 14px;
+  color: #52606d;
+  font-size: 13px;
+}
+
+.orch-steps {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  text-align: center;
+}
+
+.orch-steps span {
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: #f36f21;
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 6px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.orch-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 32px rgba(15, 23, 42, 0.14);
+}
+
+.orch-card:hover .orch-card-icon {
+  transform: translateY(-2px) scale(1.08);
+  box-shadow: 0 6px 14px rgba(243, 111, 33, 0.35);
+}
+
+.orch-highlight:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 36px rgba(15, 23, 42, 0.16);
+}
+
+.orch-steps div:hover span {
+  transform: translateY(-2px) scale(1.06);
+  box-shadow: 0 6px 14px rgba(243, 111, 33, 0.35);
+}
+
+.orch-steps p {
+  margin: 0;
+  font-size: 11px;
+  color: #0b2c3d;
+}
+
+@media (max-width: 1000px) {
+  .orch-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .orch-steps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .orch-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .orch-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

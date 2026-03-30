@@ -1,5 +1,9 @@
 import "./hero.css";
 import heroImage from "../../../../assets/smiling-woman-hero.png";
+import portfolioPdf from "../../../../assets/WANT portfolio.pdf";
+import iconPeople from "../../../../assets/icon-people.svg";
+import iconCloud from "../../../../assets/icon-cloud.svg";
+import iconPulse from "../../../../assets/icon-pulse.svg";
 
 function Hero() {
   return (
@@ -21,7 +25,7 @@ function Hero() {
 
       <div className="hero-container">
 
-        <div className="hero-content parallax-item" data-parallax="0.08" data-aos="fade-right">
+        <div className="hero-content parallax-item" data-parallax="0.12" data-aos="fade-right">
 
           <h1 className="hero-title">
             <span className="hero-highlight">
@@ -44,28 +48,45 @@ function Hero() {
 
           <div className="hero-snack glass-panel">
             <div>
-              <span className="hero-snack-label">Time-to-Value</span>
-              <strong className="hero-snack-value">8 - 12 semanas</strong>
+              <span className="hero-snack-label">Experiencia</span>
+              <strong className="hero-snack-value">
+                <img src={iconPeople} alt="" />
+                +20 años
+              </strong>
             </div>
             <div>
-              <span className="hero-snack-label">Cobertura</span>
-              <strong className="hero-snack-value">+18 países</strong>
+              <span className="hero-snack-label">SaaS</span>
+              <strong className="hero-snack-value">
+                <img src={iconCloud} alt="" />
+                Solución nube
+              </strong>
+            </div>
+            <div>
+              <span className="hero-snack-label">24/7</span>
+              <strong className="hero-snack-value">
+                <img src={iconPulse} alt="" />
+                Decisiones
+              </strong>
             </div>
           </div>
 
           <div className="hero-buttons">
-            <button className="btn-primary hero-cta">
-              Agendar llamada
-            </button>
+            <a href="#contacto">
+              <button className="btn-primary hero-cta">
+                Agendar llamada
+              </button> 
+            </a>
 
-            <button className="btn-secondary">
-              Ver portafolio
-            </button>
+            <a href={portfolioPdf} target="_blank" rel="noreferrer">
+              <button className="btn-secondary">
+                Ver portafolio
+              </button>
+            </a>
           </div>
 
         </div>
 
-        <div className="hero-image parallax-item" data-parallax="-0.1" data-aos="fade-left">
+        <div className="hero-image parallax-item" data-parallax="-0.16" data-aos="fade-left">
           <img src={heroImage} alt="cliente usando móvil" />
         </div>
 

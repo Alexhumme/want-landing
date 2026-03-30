@@ -130,11 +130,11 @@
 
 .hero-snack {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
   padding: 14px 16px;
   border-radius: 18px;
-  max-width: 360px;
+  max-width: 520px;
 }
 
 .hero-snack-label {
@@ -150,6 +150,20 @@
   font-size: 16px;
   color: #0b2c3d;
   display: block;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-snack-value img {
+  width: 16px;
+  height: 16px;
+  opacity: 0.8;
+}
+
+.hero-snack-value.compact {
+  font-size: 14px;
 }
 
 .hero-buttons {
@@ -218,7 +232,7 @@
 
   .hero-snack {
     max-width: none;
-    grid-template-columns: fit-content;
+    grid-template-columns: 1fr;
   }
 }
 

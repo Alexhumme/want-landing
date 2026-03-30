@@ -9,7 +9,7 @@ import iconCheck from "../../../assets/icon-check.svg";
 function HubSection() {
   return (
     <section className="section hub-section" id="hub-want">
-      <div className="hub-inner glass-panel parallax-item" data-parallax="0.05">
+      <div className="hub-inner glass-panel parallax-item" data-parallax="0.08">
         <div className="hub-header" data-aos="fade-up">
           <p className="hub-kicker">TRANSFORMADOR</p>
           <h2 className="hub-title">Bre-B/ISO 20022</h2>
@@ -51,7 +51,8 @@ function HubSection() {
         </div>
 
         <div
-          className="hub-capabilities"
+          className="hub-capabilities parallax-item"
+          data-parallax="-0.08"
           data-aos="fade-up"
           data-aos-delay="160"
         >

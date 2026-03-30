@@ -29,10 +29,25 @@ Se agrego la seccion "Nuestro Enfoque" en la vista Home siguiendo el layout de r
 - Fondo del Hub simplificado sin lineas animadas.
 - Margen vertical agregado entre secciones.
 - Hub ampliado con bloque de capacidades y tarjetas cristalinas.
+- Contacto actualizado con datos reales y sin formulario.
 
 ## Seccion 6 (Home)
 - Nuevo bloque "Suite de Credito" con telefono a la izquierda y texto a la derecha.
 - Fondo con malla sutil y acentos laterales en degradado.
+
+## Seccion 7 (Home)
+- Nuevo bloque "Quienes Somos" con contenedor de dos columnas y tarjetas superpuestas.
+- Fondo con rectangulos naranja/azul y linea naranja con degradado.
+- Imagen del hombre integrada con parallax y oculto en mobile.
+
+## Seccion 8 (Home)
+- Nuevo bloque "Capa de Orquestacion" con tarjetas superiores y modulo de valor agregado.
+- Elementos decorativos naranja/azul y malla inferior.
+
+## Seccion 9 (Home)
+- Infografia interactiva del proceso de credito con fases, pasos y detalle expandible.
+- Barra superior funciona como carga de progreso y scroll controla el avance.
+- Etapa Motor destacada con icono WANT.
 
 ## Estilos globales
 - Fondos con degradados suaves y blur en Hero, Enfoque, Soluciones y Transformador.
