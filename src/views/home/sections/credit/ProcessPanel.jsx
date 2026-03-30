@@ -305,7 +305,7 @@ function ProcessPanel({
       <div className="process-shell">
         <div className="process-header" data-aos="fade-up">
           <span className="process-badge">Capa de orquestacion</span>
-          <h2>Flujo de Orquestacion — Suite WANT</h2>
+          <h2>Suite WANT</h2>
           <p>
             De la solicitud al desembolso. Avanza por fases y despliega cada paso
             para ver el detalle.

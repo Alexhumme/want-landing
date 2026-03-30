@@ -220,9 +220,8 @@ function CreditExperienceSection() {
       }}
     >
       <div className="credit-bg" aria-hidden="true">
-    <div className="combo-rect blue" />    
-    <div className="combo-rect orange" />
-        
+        <div className="combo-rect blue" />
+        <div className="combo-rect orange" />
       </div>
 
       <div className="credit-frames">

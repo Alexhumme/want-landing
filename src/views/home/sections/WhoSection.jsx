@@ -11,9 +11,9 @@ import iconBolt from "../../../assets/icon-bolt.svg";
 function WhoSection() {
   return (
     <section className="section who-section" id="quienes-somos">
-      <div className="who-rect orange" aria-hidden="true" />
-      <div className="who-rect blue" aria-hidden="true" />
-      <div className="who-line" aria-hidden="true" />
+      <div className="who-rect orange parallax-item" data-parallax="0.05" aria-hidden="true" />
+      <div className="who-rect blue parallax-item" data-parallax="-0.05" aria-hidden="true" />
+      <div className="who-line parallax-item" data-parallax="0.04" aria-hidden="true" />
 
       <div className="who-shell parallax-item" data-parallax="0.08">
         <div className="who-content">

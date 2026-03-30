@@ -10,7 +10,13 @@ function CreditSuitePanel() {
     <div className="credit-panel credit-suite">
       <div className="credit-inner parallax-item" data-parallax="-0.1">
         <div className="credit-cycle-wrap" data-aos="fade-right">
-          <img className="credit-cycle-watermark" src={isotipo} alt="" aria-hidden="true" />
+          <img
+            className="credit-cycle-watermark parallax-item"
+            data-parallax="0.04"
+            src={isotipo}
+            alt=""
+            aria-hidden="true"
+          />
           <div className="credit-cycle" aria-hidden="true">
             <div className="cycle-node node-top">
               <img src={iconSolicitud} alt="" />

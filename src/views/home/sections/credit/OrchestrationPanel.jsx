@@ -9,7 +9,7 @@ import iconCheck from "../../../../assets/icon-check.svg";
 function OrchestrationPanel() {
   return (
     <div className="credit-panel orchestration-panel">
-      <div className="orch-orbits" aria-hidden="true">
+      <div className="orch-orbits parallax-item" data-parallax="0.04" aria-hidden="true">
         <span className="orbit orbit-1" />
         <span className="orbit orbit-2" />
         <span className="orbit orbit-3" />

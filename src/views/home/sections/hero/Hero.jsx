@@ -4,11 +4,30 @@ import portfolioPdf from "../../../../assets/WANT portfolio.pdf";
 import iconPeople from "../../../../assets/icon-people.svg";
 import iconCloud from "../../../../assets/icon-cloud.svg";
 import iconPulse from "../../../../assets/icon-pulse.svg";
+import isotipo from "../../../../assets/isotipo.png";
+import logo from "../../../../assets/logo.png";
 
 function Hero() {
   return (
     <section className="hero" id="inicio">
-      <svg className="hero-flow-bg" viewBox="0 0 1200 420" aria-hidden="true">
+      <img
+        className="hero-watermark parallax-item"
+        data-parallax="-0.08"
+        src={isotipo}
+        alt=""
+        aria-hidden="true"
+      />
+      <span
+        className="hero-dots hero-dots-top-left parallax-item"
+        data-parallax="0.06"
+        aria-hidden="true"
+      />
+      <svg
+        className="hero-flow-bg parallax-item"
+        data-parallax="0.04"
+        viewBox="0 0 1200 420"
+        aria-hidden="true"
+      >
         <path
           className="hero-flow-path path-one"
           d="M40,310 C200,120 420,100 520,210 S760,330 930,120 1180,120 1160,80"
@@ -26,6 +45,9 @@ function Hero() {
       <div className="hero-container">
 
         <div className="hero-content parallax-item" data-parallax="0.12" data-aos="fade-right">
+          <div className="hero-brand">
+            <img className="hero-logo" src={logo} alt="WANT" />
+          </div>
 
           <h1 className="hero-title">
             <span className="hero-highlight">

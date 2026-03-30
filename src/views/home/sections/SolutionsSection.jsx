@@ -8,8 +8,16 @@ import iconLink from "../../../assets/icon-link.svg";
 function SolutionsSection() {
   return (
     <section className="section solutions-section" id="soluciones">
-      <span className="solutions-shape shape-top-left" aria-hidden="true" />
-      <span className="solutions-shape shape-bottom-right" aria-hidden="true" />
+      <span
+        className="solutions-shape shape-top-left parallax-item"
+        data-parallax="0.06"
+        aria-hidden="true"
+      />
+      <span
+        className="solutions-shape shape-bottom-right parallax-item"
+        data-parallax="-0.05"
+        aria-hidden="true"
+      />
       <div className="solutions-inner">
         <div className="solutions-header parallax-item" data-parallax="0.1" data-aos="fade-up">
           <h2 className="solutions-title">
@@ -88,8 +96,16 @@ function SolutionsSection() {
           </div>
         </div>
 
-        <div className="solutions-accent accent-left" aria-hidden="true" />
-        <div className="solutions-accent accent-right" aria-hidden="true" />
+        <div
+          className="solutions-accent accent-left parallax-item"
+          data-parallax="0.05"
+          aria-hidden="true"
+        />
+        <div
+          className="solutions-accent accent-right parallax-item"
+          data-parallax="-0.05"
+          aria-hidden="true"
+        />
       </div>
     </section>
   );
