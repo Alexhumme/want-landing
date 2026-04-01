@@ -15,7 +15,7 @@ function SecondSection() {
             Nuestro <span>Enfoque</span>
           </h2>
           <p className="focus-subtitle">
-            Empresa colombiana especializada en soluciones tecnologicas para el
+            Empresa colombiana especializada en soluciones tecnológicas para el
             sector financiero.
           </p>
         </div>
@@ -30,16 +30,16 @@ function SecondSection() {
 
           <article className="focus-item" data-aos="fade-up" data-aos-delay="120">
             <div className="focus-circle">
-              <img src={businessTech} alt="Co-construccion con negocio y tecnologia" />
+              <img src={businessTech} alt="Co-construcción con negocio y tecnología" />
             </div>
-            <h3>Co-construccion con negocio y tecnologia</h3>
+            <h3>Co-construcción con negocio y tecnología</h3>
           </article>
 
           <article className="focus-item" data-aos="fade-up" data-aos-delay="190">
             <div className="focus-circle">
-              <img src={handshake} alt="Acompanamiento post-implementacion" />
+              <img src={handshake} alt="Acompañamiento post-implementación" />
             </div>
-            <h3>Acompanamiento Post-Implementacion</h3>
+            <h3>Acompañamiento Post-Implementación</h3>
           </article>
         </div>
 

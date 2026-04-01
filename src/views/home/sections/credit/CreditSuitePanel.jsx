@@ -42,11 +42,11 @@ function CreditSuitePanel() {
         </div>
 
         <div className="credit-copy glass-panel" data-aos="fade-left">
-          <span className="credit-kicker">Suite de credito WANT</span>
-          <h2>Originacion de Credito End-to-End</h2>
+          <span className="credit-kicker">Suite de crédito WANT</span>
+          <h2>Originación de Crédito End-to-End</h2>
           <p>
             Plataforma especializada que procesa, traduce (MT-MX), enriquece y
-            enruta mensajeria financiera entre sistemas internos y redes
+            enruta mensajería financiera entre sistemas internos y redes
             externas, cumpliendo con el estandar ISO 20022 y los requerimientos
             de migracion CBPR+ de Bre-B.
           </p>

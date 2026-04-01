@@ -13,7 +13,7 @@ function ContactSection() {
     setSubmitting(true);
     setResult("");
     const formData = new FormData(event.target);
-    formData.append("access_key", "8184ef23-0a4f-4a81-a8cf-82683da44b0b");
+    formData.append("access_key", "5aada8e7-5dde-4ed1-8d92-3a50ac108794");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -23,6 +23,7 @@ function ContactSection() {
       const data = await response.json();
       setResult(data.success ? "¡Listo! Te contactaremos pronto." : "Error");
       if (data.success) event.target.reset();
+    // eslint-disable-next-line no-unused-vars
     } catch (error) {
       setResult("Error");
     } finally {
@@ -34,7 +35,7 @@ function ContactSection() {
     <section className="section contact-section" id="contacto">
       <div className="contact-shell">
         <div className="contact-copy">
-          <p className="contact-kicker">Contactanos</p>
+          <p className="contact-kicker">Contáctanos</p>
           <h2>Canales oficiales de contacto</h2>
           <p className="contact-lead">
             Estamos listos para ayudarte con una propuesta clara, tecnica y

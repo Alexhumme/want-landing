@@ -36,15 +36,15 @@ const phases = [
         title: "Captura de datos básicos",
         tag: "ChatBot",
         detail:
-          "El chatbot solicita numero de cedula y correo electronico. Se confirma identidad preliminar con codigo OTP enviado al correo del cliente. Para credito empresarial, el asesor captura datos adicionales de la empresa.",
+          "El chatbot solicita número de cédula y correo electrónico. Se confirma identidad preliminar con código OTP enviado al correo del cliente. Para crédito empresarial, el asesor captura datos adicionales de la empresa.",
         services: ["Cedula", "Correo", "OTP"],
       },
       {
         title: "Seleccion del producto",
         tag: "Config.",
         detail:
-          "El cliente indica el tipo de credito: libre inversion, vivienda, vehiculo, rotativo, microcredito o empresarial. El sistema enruta la solicitud al modulo de producto correspondiente y al motor de reglas asociado.",
-        services: ["Consumo/Vivienda", "Microcredito", "Empresarial"],
+          "El cliente indica el tipo de crédito: libre inversión, vivienda, vehículo, rotativo, microcrédito o empresarial. El sistema enruta la solicitud al módulo de producto correspondiente y al motor de reglas asociado.",
+        services: ["Consumo/Vivienda", "Microcrédito", "Empresarial"],
       },
     ],
   },
@@ -60,24 +60,24 @@ const phases = [
     },
     steps: [
       {
-        title: "Validacion basica (Llamado 1)",
+        title: "Validación básica (Llamado 1)",
         tag: "Backend",
         detail:
-          "El backend consulta la base de datos interna del Core Bancario para verificar capacidad disponible, habito de pago interno y condiciones de elegibilidad preliminares del cliente.",
+          "El backend consulta la base de datos interna del Core Bancario para verificar capacidad disponible, hábito de pago interno y condiciones de elegibilidad preliminares del cliente.",
         services: ["Core Bancario", "BD interna", "Capacidad"],
       },
       {
-        title: "Autorizacion del titular",
+        title: "Autorización del titular",
         tag: "Legal",
         detail:
-          "El cliente acepta la autorizacion de consulta y manejo de datos personales. Confirma con OTP de aceptacion, habilitando al sistema para consultar centrales de riesgo externas.",
+          "El cliente acepta la autorización de consulta y manejo de datos personales. Confirma con OTP de aceptación, habilitando al sistema para consultar centrales de riesgo externas.",
         services: ["Autorizacion HABEAS DATA", "OTP aceptacion"],
       },
       {
         title: "Consulta a centrales externas (Llamado 2)",
         tag: "Externo",
         detail:
-          "La capa de orquestacion consulta simultaneamente a Experian y Transunion para obtener score, historial de mora, endeudamiento total y demas variables del bureau. ACH Colombia valida la cuenta bancaria si es necesario.",
+          "La capa de orquestación consulta simultáneamente a Experian y Transunion para obtener score, historial de mora, endeudamiento total y demás variables del bureau. ACH Colombia valida la cuenta bancaria si es necesario.",
         services: ["Experian", "Transunion", "ACH Colombia"],
       },
     ],
@@ -95,45 +95,45 @@ const phases = [
     },
     steps: [
       {
-        title: "Parsing y segmentacion",
+        title: "Parsing y segmentación",
         tag: "Motor",
         detail:
-          "El motor normaliza todos los campos de entrada, cataloga las variables y clasifica al cliente en el macro-segmento correspondiente segun apetito de riesgo, rentabilidad y volumen objetivo de la entidad.",
+          "El motor normaliza todos los campos de entrada, cataloga las variables y clasifica al cliente en el macro-segmento correspondiente según apetito de riesgo, rentabilidad y volumen objetivo de la entidad.",
         services: ["Parsing", "Macro-segmento", "Micro-segmento"],
       },
       {
-        title: "Aplicacion de politicas de riesgo",
+        title: "Aplicación de políticas de riesgo",
         tag: "Reglas",
         detail:
-          "Se aplican reglas de habito de pago interno y externo, scoring estadistico (Logit, Chaid, Random Forest o ML) y calculo de capacidad de pago real ajustada por segmento.",
+          "Se aplican reglas de hábito de pago interno y externo, scoring estadístico (Logit, Chaid, Random Forest o ML) y cálculo de capacidad de pago real ajustada por segmento.",
         services: ["Internal rules", "External rules", "Scoring", "Capacity"],
       },
       {
-        title: "Generacion de oferta (Llamado 3)",
+        title: "Generación de oferta (Llamado 3)",
         tag: "Decision",
         detail:
-          "El motor combina todos los resultados y calcula monto, tasa, plazo, linea de credito, garantias y tipo de salida. La oferta es presentada al cliente y genera un resultado.",
+          "El motor combina todos los resultados y calcula monto, tasa, plazo, línea de crédito, garantías y tipo de salida. La oferta es presentada al cliente y genera un resultado.",
         services: [
           "Monto",
           "Tasa",
           "Plazo",
-          "Linea",
-          "Garantias",
-          "Tipo salida",
+          "Línea",
+          "Garantías",
+          "Tipo de salida",
         ],
       },
       {
         title: "Resultado (Salida del Motor)",
         tag: "Resultado",
         detail:
-          "La combinacion de componentes configura la decision del proceso en torno a condiciones clave y su resultado.",
+          "La combinación de componentes configura la decisión del proceso en torno a condiciones clave y su resultado.",
         services: [
           "Monto",
           "Tasa",
           "Plazo",
-          "Linea",
-          "Garantias",
-          "Tipo salida",
+          "Línea",
+          "Garantías",
+          "Tipo de salida",
           "Aprobada",
           "Preaprobada",
           "Aplazada",
@@ -154,25 +154,25 @@ const phases = [
     },
     steps: [
       {
-        title: "Verificacion de identidad (KYC)",
+        title: "Verificación de identidad (KYC)",
         tag: "KYC",
         detail:
-          "El cliente accede al enlace de KYC enviado por el sistema. Se realiza validacion biometrica y verificacion de identidad con documento fisico. Mareigua u otro proveedor aliado ejecuta el proceso y retorna el resultado.",
+          "El cliente accede al enlace de KYC enviado por el sistema. Se realiza validación biométrica y verificación de identidad con documento físico. Mareigua u otro proveedor aliado ejecuta el proceso y retorna el resultado.",
         services: ["Mareigua", "Biometria", "Documento ID"],
       },
       {
         title: "Carga de documentos",
         tag: "Docs",
         detail:
-          "El cliente carga los documentos requeridos segun el tipo de credito: cedula, RUT, camara de comercio, estados financieros, entre otros. El sistema los almacena y hace transito seguro dentro del flujo.",
+          "El cliente carga los documentos requeridos según el tipo de crédito: cédula, RUT, cámara de comercio, estados financieros, entre otros. El sistema los almacena y hace tránsito seguro dentro del flujo.",
         services: ["Cedula", "RUT", "Camara comercio", "Est. financieros"],
       },
       {
-        title: "Firma electronica del pagare",
+        title: "Firma electrónica del pagaré",
         tag: "Firma",
         detail:
-          "El sistema genera automaticamente el pagare, la solicitud de credito y el formato de asegurabilidad. El cliente los firma electronicamente. El proveedor de firma es aliado de Want o puede ser uno propio de la entidad.",
-        services: ["Pagare digital", "Asegurabilidad", "Firma electronica"],
+          "El sistema genera automáticamente el pagaré, la solicitud de crédito y el formato de asegurabilidad. El cliente los firma electrónicamente. El proveedor de firma es aliado de Want o puede ser uno propio de la entidad.",
+        services: ["Pagaré digital", "Asegurabilidad", "Firma electrónica"],
       },
     ],
   },
@@ -188,24 +188,24 @@ const phases = [
     },
     steps: [
       {
-        title: "Revision del analista",
+        title: "Revisión del analista",
         tag: "Analista",
         detail:
-          "Para creditos que no aplican aprobacion en linea automatica, el analista de credito revisa la informacion diligenciada, los resultados del motor y los documentos cargados. Puede modificar variables antes de escalar.",
+          "Para créditos que no aplican aprobación en línea automática, el analista de crédito revisa la información diligenciada, los resultados del motor y los documentos cargados. Puede modificar variables antes de escalar.",
         services: ["Bandeja de solicitudes", "Revision documentos"],
       },
       {
-        title: "Flujo de aprobacion jerarquico",
+        title: "Flujo de aprobación jerárquico",
         tag: "Comite",
         detail:
-          "La solicitud escala a los entes de aprobacion definidos en la politica: aprobador de primer nivel, gerente de zona, comite de credito, etc. La estructura puede ser horizontal o jerarquica segun el tipo y monto de la operacion.",
-        services: ["Niveles aprobacion", "Horizontal o jerarquico"],
+          "La solicitud escala a los entes de aprobación definidos en la política: aprobador de primer nivel, gerente de zona, comité de crédito, etc. La estructura puede ser horizontal o jerárquica según el tipo y monto de la operación.",
+        services: ["Niveles aprobación", "Horizontal o jerárquico"],
       },
       {
         title: "Decision final y notificacion",
         tag: "Resultado",
         detail:
-          "Una vez el ultimo ente ejecuta la decision, el sistema notifica al cliente por correo o WhatsApp. Las decisiones posibles son: aprobada, preaprobada (con condiciones), aplazada o negada con causal.",
+          "Una vez el último ente ejecuta la decisión, el sistema notifica al cliente por correo o WhatsApp. Las decisiones posibles son: aprobada, preaprobada (con condiciones), aplazada o negada con causal.",
         services: ["Aprobada", "Preaprobada", "Aplazada", "Negada"],
       },
     ],
@@ -222,24 +222,24 @@ const phases = [
     },
     steps: [
       {
-        title: "Envio al Core Bancario",
+        title: "Envío al Core Bancario",
         tag: "Core",
         detail:
-          "El Originador envia la instruccion de desembolso directamente al Core Bancario de la entidad. Se incluyen todos los parametros de la operacion aprobada: monto, tasa, plazo, linea y condiciones de garantia.",
+          "El Originador envía la instrucción de desembolso directamente al Core Bancario de la entidad. Se incluyen todos los parámetros de la operación aprobada: monto, tasa, plazo, línea y condiciones de garantía.",
         services: ["Core Bancario", "Instruccion desembolso"],
       },
       {
-        title: "Constitucion de garantias",
-        tag: "Garantias",
+        title: "Constitución de garantías",
+        tag: "Garantías",
         detail:
-          "El Core procede a constituir las garantias requeridas segun el tipo de credito (fondos de garantia, hipoteca, pignoracion, etc.) antes de efectuar el desembolso final al cliente.",
+          "El Core procede a constituir las garantías requeridas según el tipo de crédito (fondos de garantía, hipoteca, pignoración, etc.) antes de efectuar el desembolso final al cliente.",
         services: ["Fondo de garantia", "Hipoteca", "Pignoracion"],
       },
       {
         title: "Desembolso y registro en Datalake",
         tag: "Finalizado",
         detail:
-          "El dinero es desembolsado en la cuenta del cliente. Toda la data del proceso queda registrada en el Datalake de la entidad para consumo de los sistemas BI/BA, auditoria y analisis de riesgo posterior.",
+          "El dinero es desembolsado en la cuenta del cliente. Toda la data del proceso queda registrada en el Datalake de la entidad para consumo de los sistemas BI/BA, auditoria y análisis de riesgo posterior.",
         services: ["Desembolso cuenta", "Datalake", "BI/BA", "Auditoria"],
       },
     ],
@@ -304,15 +304,15 @@ function ProcessPanel({
     <div className={`credit-panel process-panel ${isActive ? "active" : ""}`}>
       <div className="process-shell">
         <div className="process-header" data-aos="fade-up">
-          <span className="process-badge">Capa de orquestacion</span>
+          <span className="process-badge">Capa de orquestación</span>
           <h2>Suite WANT</h2>
           <p>
             De la solicitud al desembolso. Avanza por fases y despliega cada paso
             para ver el detalle.
           </p>
           <p className="process-note">
-            Sirve tambien para empresas que quieren prestar servicios financieros
-            a personas naturales y juridicas.
+            Sirve también para empresas que quieren prestar servicios financieros
+            a personas naturales y jurídicas.
           </p>
         </div>
 
@@ -395,7 +395,7 @@ function ProcessPanel({
                       <p>{step.detail}</p>
                       {phase.id === "motor" && step.tag === "Resultado" && (
                         <div className="decision-block">
-                          <div className="decision-label">Decision (Salida del Motor)</div>
+                          <div className="decision-label">Decisión (Salida del Motor)</div>
                           <div className="decision-items">
                             <span className="decision-item">
                               <img src={iconCredit} alt="" />
@@ -411,15 +411,15 @@ function ProcessPanel({
                             </span>
                             <span className="decision-item">
                               <img src={iconLink} alt="" />
-                              Linea
+                              Línea
                             </span>
                             <span className="decision-item">
                               <img src={iconShield} alt="" />
-                              Garantias
+                              Garantías
                             </span>
                             <span className="decision-item">
                               <img src={iconCheck} alt="" />
-                              Tipo salida
+                              Tipo de salida
                             </span>
                           </div>
                           <div className="decision-status">
@@ -463,12 +463,12 @@ function ProcessPanel({
                   style={{ background: phase.theme.border }}
                 />
                 {phase.id === "motor"
-                  ? "Motor de decision"
+                  ? "Motor de decisión"
                   : "Acciones del sistema"}
               </div>
               <div className="leg">
                 <div className="leg-dot" style={{ background: phase.theme.line }} />
-                {phase.id === "motor" ? "Reglas de politica" : "Servicios externos"}
+                {phase.id === "motor" ? "Reglas de política" : "Servicios externos"}
               </div>
             </div>
           </div>
@@ -502,3 +502,4 @@ function ProcessPanel({
 
 export { phases };
 export default ProcessPanel;
+

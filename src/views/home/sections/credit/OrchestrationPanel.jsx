@@ -48,7 +48,7 @@ function OrchestrationPanel() {
             </div>
             <p>
               <strong>KYC,ACH,</strong>
-              <span>Firma electronica</span>
+              <span>Firma electrónica</span>
             </p>
           </div>
           <div className="orch-card">
@@ -56,7 +56,7 @@ function OrchestrationPanel() {
               <img src={iconCheck} alt="" />
             </div>
             <p>
-              <strong>Gestion documental</strong>
+              <strong>Gestión documental</strong>
               <span>completa</span>
             </p>
           </div>
@@ -68,19 +68,19 @@ function OrchestrationPanel() {
               <img src={iconSpark} alt="" />
               <div>
                 <span>B. NUESTRO VALOR AGREGADO</span>
-                <h3>Co-construccion de Politica</h3>
+                <h3>Co-construccion de Política</h3>
               </div>
             </div>
             <span className="orch-pill">DIFERENCIADOR</span>
           </div>
           <p>
-            No solo instalamos tecnologia,{" "}
+            No solo instalamos tecnología,{" "}
             <strong>construimos estrategia con ustedes</strong>
           </p>
           <div className="orch-steps">
             <div>
               <span>1</span>
-              <p>Analisis de Portafolio</p>
+              <p>Análisis de Portafolio</p>
             </div>
             <div>
               <span>2</span>
@@ -88,11 +88,11 @@ function OrchestrationPanel() {
             </div>
             <div>
               <span>3</span>
-              <p>Politica de Credito</p>
+              <p>Política de Crédito</p>
             </div>
             <div>
               <span>4</span>
-              <p>Politica de Pricing</p>
+              <p>Política de Pricing</p>
             </div>
             <div>
               <span>5</span>

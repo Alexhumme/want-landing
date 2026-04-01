@@ -65,7 +65,7 @@ function HubSection() {
               <h4>99.99%</h4>
               <p>Disponibilidad</p>
               <ul>
-                <li>Validacion de mensajes MT y MX segun estandares Bre-B</li>
+                <li>Validacion de mensajes MT y MX según estandares Bre-B</li>
                 <li>Enriquecimiento automatico de datos (BIC, LEI, referencias)</li>
               </ul>
             </div>
@@ -75,7 +75,7 @@ function HubSection() {
               <p>Latencia promedio</p>
               <ul>
                 <li>Ruteo inteligente basado en reglas de negocio configurables</li>
-                <li>Gestion de colas y excepciones con alertas en tiempo real</li>
+                <li>Gestión de colas y excepciones con alertas en tiempo real</li>
               </ul>
             </div>
             <div className="hub-cap-card">

@@ -19,8 +19,8 @@ function TransformSection() {
         </h2>
         <p className="transform-copy">
           Plataforma especializada que procesa, traduce (MT - MX), enriquece y
-          enruta mensajeria financiera entre sistemas internos y redes externas,
-          cumpliendo con el estandar ISO 20022 y los requerimientos de migracion
+          enruta mensajería financiera entre sistemas internos y redes externas,
+          cumpliendo con el estándar ISO 20022 y los requerimientos de migración
           CBPR+ de Bre-B.
         </p>
         <div className="transform-logo" aria-hidden="true">

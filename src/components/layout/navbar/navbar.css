@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
 
-  border-top: 6px solid var(--brand); /* linea superior naranja */
+  border-top: 6px solid var(--brand); /* línea superior naranja */
   border-bottom: 1px solid #eee;
   position: fixed;
   top: 0;
@@ -27,7 +27,7 @@
   color: var(--brand);
 }
 
-/* linea inferior animada */
+/* línea inferior animada */
 .navbar-link::after {
   content: "";
   position: absolute;
@@ -45,7 +45,7 @@
   width: 100%;
 }
 
-/* linea activa */
+/* línea activa */
 .navbar-link.active {
   color: var(--brand);
 }

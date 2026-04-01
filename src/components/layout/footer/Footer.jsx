@@ -51,7 +51,7 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <span>© 2026 WANT. Todos los derechos reservados.</span>
+          <span>© 2026 WANT. Todos los derechos reservados. · v1.0.0</span>
           <span>Crafted with ♥ and lots of coffee</span>
         </div>
       </div>

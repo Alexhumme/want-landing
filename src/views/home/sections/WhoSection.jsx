@@ -25,22 +25,22 @@ function WhoSection() {
             <div className="who-divider" />
             <p>
               <strong>WANT</strong> es una empresa colombiana especializada en
-              soluciones tecnologicas para el sector financiero. Combinamos mas
-              de dos decadas de experiencia en banca y tecnologia para entregar
-              plataformas que transforman la operacion de nuestros clientes.
+              soluciones tecnológicas para el sector financiero. Combinamos más
+              de dos décadas de experiencia en banca y tecnología para entregar
+              plataformas que transforman la operación de nuestros clientes.
             </p>
             <p>
-              Nuestra propuesta de valor se basa en un enfoque unico:
+              Nuestra propuesta de valor se basa en un enfoque único:
               <span className="who-highlight">
-                tecnologia + conocimiento profundo del negocio
+                tecnología + conocimiento profundo del negocio
               </span>
               . No solo implementamos software;
               <span className="who-highlight">
                 {" "}
                 co-construimos{" "}
               </span>
-              soluciones que entienden las particularidades del credito, los
-              pagos y la mensajeria financiera en Latinoamerica.
+              soluciones que entienden las particularidades del crédito, los
+              pagos y la mensajería financiera en Latinoamérica.
             </p>
 
             <div className="who-metrics">
@@ -50,8 +50,8 @@ function WhoSection() {
                 </div>
                 <div>
                   <strong>+20</strong>
-                  <span>Anos de experiencia</span>
-                  <small>En banca y tecnologia</small>
+                  <span>Años de experiencia</span>
+                  <small>En banca y tecnología</small>
                 </div>
               </div>
               <div className="who-metric">
@@ -59,7 +59,7 @@ function WhoSection() {
                   <img src={iconCloud} alt="AWS" />
                 </div>
                 <div>
-                  <strong>AWS</strong>
+                  <strong>Cloud Services</strong>
                   <span>Estructura</span>
                 </div>
               </div>
@@ -70,7 +70,7 @@ function WhoSection() {
                 <div>
                   <strong>24/7</strong>
                   <span>Decisiones en</span>
-                  <small>Linea</small>
+                  <small>Línea</small>
                 </div>
               </div>
             </div>
@@ -92,28 +92,28 @@ function WhoSection() {
               <div>
                 <h3>Arquitecturas modernas y escalables</h3>
                 <p>
-                  Plataformas que crecen con tu operacion sin sacrificar
+                  Plataformas que crecen con tu operación sin sacrificar
                   rendimiento ni seguridad.
                 </p>
               </div>
             </div>
             <div className="who-card">
-              <img src={iconHandshake} alt="Co-construccion" />
+              <img src={iconHandshake} alt="Co-construcción" />
               <div>
-                <h3>Co-construccion</h3>
+                <h3>Co-construcción</h3>
                 <p>
-                  Tus equipos de negocio y tecnologia participan activamente en
+                  Tus equipos de negocio y tecnología participan activamente en
                   cada etapa.
                 </p>
               </div>
             </div>
             <div className="who-card">
-              <img src={iconSupport} alt="Acompanamiento continuo" />
+              <img src={iconSupport} alt="Acompañamiento continuo" />
               <div>
-                <h3>Acompanamiento continuo</h3>
+                <h3>Acompañamiento continuo</h3>
                 <p>
                   No terminamos en el go-live. Evolucionamos contigo
-                  postimplementacion.
+                  postimplementación.
                 </p>
               </div>
             </div>

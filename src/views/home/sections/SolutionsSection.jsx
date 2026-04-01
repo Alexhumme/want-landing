@@ -25,7 +25,7 @@ function SolutionsSection() {
           </h2>
           <p className="solutions-subtitle">
             Cada producto puede implementarse de forma independiente o como parte
-            de una solucion integrada segun sus necesidades.
+            de una solución integrada según sus necesidades.
           </p>
         </div>
 
@@ -33,11 +33,11 @@ function SolutionsSection() {
           <div className="solutions-col left parallax-item" data-parallax="0.12" data-aos="fade-right">
             <article className="solution-card align-right" data-aos="fade-up" data-aos-delay="50">
               <div className="solution-icon">
-                <img src={iconCredit} alt="Credito digital" />
+                <img src={iconCredit} alt="Crédito digital" />
               </div>
               <p className="solution-desc">
-                Originacion multicanal + orquestacion de integraciones + motor de
-                decision para segmentacion, capacidad y pricing.
+                Originación multicanal + orquestación de integraciones + motor de
+                decisión para segmentación, capacidad y pricing.
               </p>
               <div className="solution-features">
                 <span>
@@ -53,7 +53,7 @@ function SolutionsSection() {
                   Motor
                 </span>
               </div>
-              <h3 className="solution-title">Credito Digital</h3>
+              <h3 className="solution-title">Crédito Digital</h3>
               <p className="solution-subtitle">End-to-End</p>
             </article>
           </div>
@@ -72,16 +72,16 @@ function SolutionsSection() {
               </div>
               <p className="solution-desc">
                 Plataforma para procesar, traducir MT-MX, enriquecer y rutear
-                mensajeria financiera bajo estandar ISO 20022.
+                mensajería financiera bajo estándar ISO 20022.
               </p>
               <div className="solution-features">
                 <span>
                   <img src={iconLink} alt="" />
-                  Orquestacion
+                  Orquestación
                 </span>
                 <span>
                   <img src={iconCredit} alt="" />
-                  Traduccion
+                  Traducción
                 </span>
                 <span>
                   <img src={iconPos} alt="" />
@@ -89,7 +89,7 @@ function SolutionsSection() {
                 </span>
               </div>
               <h3 className="solution-title">Transformador</h3>
-              <p className="solution-subtitle">Bre-B/ISO 20022</p>
+              <p className="solution-subtitle">Pagos (CASH, bre-b, Swift)/ISO 20022</p>
             </article>
 
            

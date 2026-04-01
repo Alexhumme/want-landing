@@ -27,6 +27,7 @@ function CreditExperienceSection() {
   });
   const updateBarRef = useRef(null);
   const pillTimerRef = useRef(null);
+  const stepThrottleRef = useRef(0);
   const progress = useMemo(
     () => (phaseIndex / (phases.length - 1)) * 100,
     [phaseIndex]
@@ -65,6 +66,13 @@ function CreditExperienceSection() {
       }
 
       if (stageIndex === 2) {
+        const now = Date.now();
+        if (now - stepThrottleRef.current < 650) {
+          event.preventDefault();
+          return;
+        }
+        stepThrottleRef.current = now;
+
         if (direction > 0 && phaseIndex < phases.length - 1) {
           event.preventDefault();
           setPhaseIndex((prev) => Math.min(prev + 1, phases.length - 1));
@@ -248,8 +256,9 @@ function CreditExperienceSection() {
           onClick={() => setStageIndex((prev) => Math.max(prev - 1, 0))}
           disabled={stageIndex === 0}
           type="button"
+          aria-label="Anterior"
         >
-          ← Anterior
+          <span className="nav-icon">‹</span>
         </button>
         <span className="credit-nav-label">
           {stageIndex === 0
@@ -263,8 +272,9 @@ function CreditExperienceSection() {
           onClick={() => setStageIndex((prev) => Math.min(prev + 1, 2))}
           disabled={stageIndex === 2}
           type="button"
+          aria-label="Siguiente"
         >
-          Siguiente →
+          <span className="nav-icon">›</span>
         </button>
       </div>
     </section>
