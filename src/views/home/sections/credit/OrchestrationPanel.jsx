@@ -19,7 +19,7 @@ function OrchestrationPanel() {
         <div className="orch-header parallax-item" data-parallax="0.06" data-aos="fade-up">
           <img src={iconChain} alt="" />
           <h2>
-            Capa de <span>Orquestacion</span>
+            Capa de <span>Orquestación</span>
           </h2>
         </div>
 
@@ -29,7 +29,7 @@ function OrchestrationPanel() {
               <img src={iconLink} alt="" />
             </div>
             <p>
-              <strong>Integracion segura</strong>
+              <strong>Integración segura</strong>
               <span>con Core Bancario</span>
             </p>
           </div>
@@ -68,7 +68,7 @@ function OrchestrationPanel() {
               <img src={iconSpark} alt="" />
               <div>
                 <span>B. NUESTRO VALOR AGREGADO</span>
-                <h3>Co-construccion de Política</h3>
+                <h3>Co-construcción de Política</h3>
               </div>
             </div>
             <span className="orch-pill">DIFERENCIADOR</span>
@@ -84,7 +84,7 @@ function OrchestrationPanel() {
             </div>
             <div>
               <span>2</span>
-              <p>Segmentacion Optima</p>
+              <p>Segmentación Óptima</p>
             </div>
             <div>
               <span>3</span>

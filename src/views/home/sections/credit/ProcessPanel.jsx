@@ -40,7 +40,7 @@ const phases = [
         services: ["Cedula", "Correo", "OTP"],
       },
       {
-        title: "Seleccion del producto",
+        title: "Selección del producto",
         tag: "Config.",
         detail:
           "El cliente indica el tipo de crédito: libre inversión, vivienda, vehículo, rotativo, microcrédito o empresarial. El sistema enruta la solicitud al módulo de producto correspondiente y al motor de reglas asociado.",
@@ -50,7 +50,7 @@ const phases = [
   },
   {
     id: "validacion",
-    label: "Validacion",
+    label: "Validación",
     icon: iconValidacion,
     theme: {
       bg: "#EEEDFE",
@@ -71,7 +71,7 @@ const phases = [
         tag: "Legal",
         detail:
           "El cliente acepta la autorización de consulta y manejo de datos personales. Confirma con OTP de aceptación, habilitando al sistema para consultar centrales de riesgo externas.",
-        services: ["Autorizacion HABEAS DATA", "OTP aceptacion"],
+        services: ["Autorización HABEAS DATA", "OTP aceptación"],
       },
       {
         title: "Consulta a centrales externas (Llamado 2)",
@@ -110,7 +110,7 @@ const phases = [
       },
       {
         title: "Generación de oferta (Llamado 3)",
-        tag: "Decision",
+        tag: "Decisión",
         detail:
           "El motor combina todos los resultados y calcula monto, tasa, plazo, línea de crédito, garantías y tipo de salida. La oferta es presentada al cliente y genera un resultado.",
         services: [
@@ -178,7 +178,7 @@ const phases = [
   },
   {
     id: "aprobacion",
-    label: "Aprobacion",
+    label: "Aprobación",
     icon: iconAprobacion,
     theme: {
       bg: "#FAECE7",
@@ -202,7 +202,7 @@ const phases = [
         services: ["Niveles aprobación", "Horizontal o jerárquico"],
       },
       {
-        title: "Decision final y notificacion",
+        title: "Decisión final y notificación",
         tag: "Resultado",
         detail:
           "Una vez el último ente ejecuta la decisión, el sistema notifica al cliente por correo o WhatsApp. Las decisiones posibles son: aprobada, preaprobada (con condiciones), aplazada o negada con causal.",
@@ -233,14 +233,14 @@ const phases = [
         tag: "Garantías",
         detail:
           "El Core procede a constituir las garantías requeridas según el tipo de crédito (fondos de garantía, hipoteca, pignoración, etc.) antes de efectuar el desembolso final al cliente.",
-        services: ["Fondo de garantia", "Hipoteca", "Pignoracion"],
+        services: ["Fondo de garantía", "Hipoteca", "Pignoración"],
       },
       {
         title: "Desembolso y registro en Datalake",
         tag: "Finalizado",
         detail:
-          "El dinero es desembolsado en la cuenta del cliente. Toda la data del proceso queda registrada en el Datalake de la entidad para consumo de los sistemas BI/BA, auditoria y análisis de riesgo posterior.",
-        services: ["Desembolso cuenta", "Datalake", "BI/BA", "Auditoria"],
+          "El dinero es desembolsado en la cuenta del cliente. Toda la data del proceso queda registrada en el Datalake de la entidad para consumo de los sistemas BI/BA, auditoría y análisis de riesgo posterior.",
+        services: ["Desembolso cuenta", "Datalake", "BI/BA", "Auditoría"],
       },
     ],
   },

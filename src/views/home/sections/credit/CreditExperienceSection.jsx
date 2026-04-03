@@ -127,8 +127,9 @@ function CreditExperienceSection() {
       if (!sectionRef.current || !phasesRef.current) return;
       const containerRect = sectionRef.current.getBoundingClientRect();
       const rect = phasesRef.current.getBoundingClientRect();
+      const scrollOffset = sectionRef.current.scrollTop || 0;
       const next = {
-        top: rect.top - containerRect.top,
+        top: rect.top - containerRect.top + scrollOffset,
         left: rect.left - containerRect.left,
         width: rect.width,
         height: rect.height,
@@ -182,11 +183,14 @@ function CreditExperienceSection() {
     window.addEventListener("scroll", rafUpdate, { passive: true });
 
     let resizeObserver = null;
-    if (phasesRef.current && "ResizeObserver" in window) {
+    if ("ResizeObserver" in window) {
       resizeObserver = new ResizeObserver(() => {
         rafUpdate();
       });
-      resizeObserver.observe(phasesRef.current);
+      if (phasesRef.current) resizeObserver.observe(phasesRef.current);
+      if (sectionRef.current) resizeObserver.observe(sectionRef.current);
+      const shell = sectionRef.current?.querySelector(".process-shell");
+      if (shell) resizeObserver.observe(shell);
     }
     return () => {
       window.removeEventListener("resize", rafUpdate);
@@ -202,7 +206,7 @@ function CreditExperienceSection() {
     const start = performance.now();
     const sync = (now) => {
       if (updateBarRef.current) updateBarRef.current();
-      if (now - start < 650) {
+      if (now - start < 1200) {
         rafId = requestAnimationFrame(sync);
       }
     };
@@ -264,7 +268,7 @@ function CreditExperienceSection() {
           {stageIndex === 0
             ? "Suite"
             : stageIndex === 1
-              ? "Orquestacion"
+              ? "Orquestación"
               : "Proceso"}
         </span>
         <button

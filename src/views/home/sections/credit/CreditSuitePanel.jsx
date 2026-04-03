@@ -24,7 +24,7 @@ function CreditSuitePanel() {
             </div>
             <div className="cycle-node node-right">
               <img src={iconValidacion} alt="" />
-              <span>Validacion</span>
+              <span>Validación</span>
             </div>
             <div className="cycle-node node-bottom">
               <img src={iconMotor} alt="" />
@@ -47,8 +47,8 @@ function CreditSuitePanel() {
           <p>
             Plataforma especializada que procesa, traduce (MT-MX), enriquece y
             enruta mensajería financiera entre sistemas internos y redes
-            externas, cumpliendo con el estandar ISO 20022 y los requerimientos
-            de migracion CBPR+ de Bre-B.
+            externas, cumpliendo con el estándar ISO 20022 y los requerimientos
+            de migración CBPR+ de Bre-B.
           </p>
         </div>
       </div>

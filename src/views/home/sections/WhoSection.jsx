@@ -18,7 +18,7 @@ function WhoSection() {
       <div className="who-shell parallax-item" data-parallax="0.08">
         <div className="who-content">
           <div className="who-left" data-aos="fade-right">
-            <p className="who-kicker">QUIENES SOMOS</p>
+            <p className="who-kicker">QUIÉNES SOMOS</p>
             <h2>
               Entendemos el Negocio Financiero <span>desde adentro</span>
             </h2>

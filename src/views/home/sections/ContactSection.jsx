@@ -38,7 +38,7 @@ function ContactSection() {
           <p className="contact-kicker">Contáctanos</p>
           <h2>Canales oficiales de contacto</h2>
           <p className="contact-lead">
-            Estamos listos para ayudarte con una propuesta clara, tecnica y
+            Estamos listos para ayudarte con una propuesta clara, técnica y
             accionable.
           </p>
 
@@ -63,10 +63,10 @@ function ContactSection() {
             </div>
             <div className="contact-card">
               <div className="contact-icon">
-                <img src={iconPhone} alt="Telefono" />
+                <img src={iconPhone} alt="Teléfono" />
               </div>
               <div>
-                <h3>Telefono</h3>
+                <h3>Teléfono</h3>
                 <p>+57 300 855 9200</p>
               </div>
             </div>

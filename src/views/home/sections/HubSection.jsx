@@ -65,8 +65,8 @@ function HubSection() {
               <h4>99.99%</h4>
               <p>Disponibilidad</p>
               <ul>
-                <li>Validacion de mensajes MT y MX según estandares Bre-B</li>
-                <li>Enriquecimiento automatico de datos (BIC, LEI, referencias)</li>
+                <li>Validación de mensajes MT y MX según estándares Bre-B</li>
+                <li>Enriquecimiento automático de datos (BIC, LEI, referencias)</li>
               </ul>
             </div>
             <div className="hub-cap-card">
@@ -83,7 +83,7 @@ function HubSection() {
               <h4>CBPR+</h4>
               <p>Compliance listo</p>
               <ul>
-                <li>Trazabilidad completa y auditoria para cumplimiento regulatorio</li>
+                <li>Trazabilidad completa y auditoría para cumplimiento regulatorio</li>
                 <li>Alta disponibilidad, escalabilidad y seguridad empresarial</li>
               </ul>
             </div>
