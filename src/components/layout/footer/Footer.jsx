@@ -29,7 +29,7 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/company/want-n-get/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
                 <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -39,7 +39,7 @@ function Footer() {
               <a
                 href="https://wa.me/573008559200?text=Hola%21%20Quiero%20saber%20mas%20sobre%20su%20servicio."
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label="WhatsApp"
               >
                 <svg viewBox="0 0 32 32" aria-hidden="true">

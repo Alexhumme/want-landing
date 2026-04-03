@@ -73,30 +73,38 @@ function ContactSection() {
           </div>
 
         </div>
-          <form className="contact-form" onSubmit={onSubmit}>
-            <div className="contact-form-head">
-              <h3>Conversemos sobre tu proyecto</h3>
-              <p>Cuéntanos lo que necesitas y te contactaremos en breve.</p>
-            </div>
-            <div className="contact-form-row">
-              <label>
-                Nombre
-                <input type="text" name="name" required />
-              </label>
-              <label>
-                Email
-                <input type="email" name="email" required />
-              </label>
-            </div>
+        <form className="contact-form" onSubmit={onSubmit}>
+          <input
+            className="contact-botcheck"
+            type="text"
+            name="botcheck"
+            tabIndex="-1"
+            autoComplete="off"
+            aria-hidden="true"
+          />
+          <div className="contact-form-head">
+            <h3>Conversemos sobre tu proyecto</h3>
+            <p>Cuéntanos lo que necesitas y te contactaremos en breve.</p>
+          </div>
+          <div className="contact-form-row">
             <label>
-              Mensaje
-              <textarea name="message" rows="4" required />
+              Nombre
+              <input type="text" name="name" required />
             </label>
-            <button type="submit" disabled={submitting}>
-              {submitting ? "Enviando..." : "Enviar"}
-            </button>
-            {result && <p className="contact-result">{result}</p>}
-          </form>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+          </div>
+          <label>
+            Mensaje
+            <textarea name="message" rows="4" required />
+          </label>
+          <button type="submit" disabled={submitting}>
+            {submitting ? "Enviando..." : "Enviar"}
+          </button>
+          {result && <p className="contact-result">{result}</p>}
+        </form>
       </div>
     </section>
   );

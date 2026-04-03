@@ -110,6 +110,7 @@
 }
 
 .contact-form {
+  position: relative;
   margin-top: 24px;
   display: grid;
   gap: 14px;
@@ -120,6 +121,15 @@
   box-shadow: 0 18px 30px rgba(15, 23, 42, 0.08);
   backdrop-filter: blur(10px);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-botcheck {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .contact-form:hover {
