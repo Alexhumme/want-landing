@@ -45,10 +45,9 @@ function CreditSuitePanel() {
           <span className="credit-kicker">Suite de crédito WANT</span>
           <h2>Originación de Crédito End-to-End</h2>
           <p>
-            Plataforma especializada que procesa, traduce (MT-MX), enriquece y
-            enruta mensajería financiera entre sistemas internos y redes
-            externas, cumpliendo con el estándar ISO 20022 y los requerimientos
-            de migración CBPR+ de Bre-B.
+            Plataforma modular SaaS que integra canales digitales, motor de decisión
+            inteligente y orquestación de servicios para transformar la colocación de
+            crédito con control de riesgo y rentabilidad.
           </p>
         </div>
       </div>

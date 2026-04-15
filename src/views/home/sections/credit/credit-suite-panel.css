@@ -196,7 +196,7 @@
 }
 
 .credit-copy {
-  max-width: 590px;
+  max-width: 730px;
   z-index: 1;
   padding: 50px;
   border-radius: 50px 50px 50px 50px;
@@ -233,16 +233,15 @@
 
 .credit-kicker {
   display: inline-block;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #ffaf42;
-  margin-bottom: 10px;
 }
 
 .credit-copy h2 {
-  font-size: clamp(22px, 3vw, 32px);
+  font-size: clamp(24px, 1.8vw, 26px);
   color: #0b2c3d;
   margin-bottom: 12px;
   border-bottom: 1px solid rgb(216, 216, 216);
@@ -313,5 +312,9 @@
 
   .credit-inner {
     padding:  clamp(60px, 6vw, 96px);
+  }
+
+  .credit-kicker {
+    font-size: 12px;
   }
 }
