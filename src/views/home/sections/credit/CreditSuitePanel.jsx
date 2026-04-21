@@ -42,8 +42,8 @@ function CreditSuitePanel() {
         </div>
 
         <div className="credit-copy glass-panel" data-aos="fade-left">
-          <span className="credit-kicker">Suite de crédito WANT</span>
-          <h2>Originación de Crédito End-to-End</h2>
+          <h2>Suite de crédito WANT</h2>
+          <span className="credit-kicker">Originación de Crédito End-to-End</span>
           <p>
             Plataforma modular SaaS que integra canales digitales, motor de decisión
             inteligente y orquestación de servicios para transformar la colocación de

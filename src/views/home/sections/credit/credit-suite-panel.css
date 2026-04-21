@@ -233,18 +233,20 @@
 
 .credit-kicker {
   display: inline-block;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #ffaf42;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgb(216, 216, 216);
 }
 
 .credit-copy h2 {
-  font-size: clamp(24px, 1.8vw, 26px);
+  font-size: clamp(28px, 2vw, 30px);
   color: #0b2c3d;
-  margin-bottom: 12px;
-  border-bottom: 1px solid rgb(216, 216, 216);
+  margin-bottom: -12px;
 }
 
 .credit-copy p {
@@ -315,6 +317,6 @@
   }
 
   .credit-kicker {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
